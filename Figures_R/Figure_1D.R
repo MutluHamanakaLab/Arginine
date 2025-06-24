@@ -189,7 +189,7 @@ newnames_M_v_I_arg_kg <- lapply(
 
 # Create Heatmap
 # Figure 1D
-M_v_I_arg_kg_heatmap_top_50<- pheatmap(sig.zscore.mat_M_v_I_arg_kg ,
+M_v_I_arg_kg_heatmap <- pheatmap(sig.zscore.mat_M_v_I_arg_kg ,
                          annotation_col = heat.annotation_M_v_I_arg_kg, 
                          cluster_cols = FALSE,
                          main="",
@@ -200,4 +200,4 @@ M_v_I_arg_kg_heatmap_top_50<- pheatmap(sig.zscore.mat_M_v_I_arg_kg ,
 )
 
 # Save the Plot
-ggsave("./PATH/To/DIRECTORY/Male_vs_IPF_heatmap_arg_kg.png", plot = M_v_I_arg_kg_heatmap_top_50, width = 10, height = 15, limitsize = FALSE)
+ggsave("./PATH/To/DIRECTORY/Male_vs_IPF_heatmap_arg_kg.png", plot = M_v_I_arg_kg_heatmap, width = 10, height = 15, limitsize = FALSE)
