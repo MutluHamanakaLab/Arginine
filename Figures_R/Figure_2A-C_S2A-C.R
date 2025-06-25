@@ -78,7 +78,7 @@ plot_height <- 6
 # Figure 2C
 for (gene in arg_metabolism) {
   plot <- FeaturePlot(level3.seurat_L, features = gene, reduction = "umap", label = F, order = T)
-  ggsave(filename = paste0("./PATH/TO/DIRECTORY/FeaturePlots_level3_", gene, "_RNA_Normalized.png"), plot = plot, width = plot_width, height = plot_height, units = "cm")
+  ggsave(filename = paste0("./PATH/TO/DIRECTORY/scFeaturePlots_level3_", gene, "_RNA_Normalized.png"), plot = plot, width = plot_width, height = plot_height, units = "cm")
 }
 
 # Figure S2B
