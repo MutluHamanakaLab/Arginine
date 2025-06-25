@@ -27,7 +27,7 @@ txi <- tximport(files, type = "kallisto", tx2gene = tx2gene)
 txi.tx <- tximport(files, type = "kallisto", txOut = TRUE)
 txi.sum <- summarizeToGene(txi.tx, tx2gene)
 all.equal(txi$counts, txi.sum$counts) # Check equality of counts
-attributes(txi) # View attributes of the txi_atf4 object
+attributes(txi) # View attributes
 
 # Write the abundance data to a DataFrame
 read_abundance <- data.frame(txi$abundance)
